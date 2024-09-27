@@ -6,8 +6,7 @@ Previsão de aprovação ou reprovação de alunos.
 Análise de múltiplos fatores que influenciam o desempenho escolar.
 Treinamento e avaliação de diversos algoritmos de machine learning.
 Interface web para inserção de novos dados e visualização das predições.
-
-## Treino de diferentes modelos de machine learning:
+Suporte a diferentes modelos de machine learning:
 KNN
 Árvore de Decisão
 Naive Bayes
@@ -18,38 +17,31 @@ Back-end: Python com Flask
 Front-end: HTML, CSS, JavaScript
 Machine Learning:
 Bibliotecas: pandas, numpy, scikit-learn
-Modelos: DecisionTreeClassifier, KNeighborsClassifier, GaussianNB, SVC
-Ambiente de Desenvolvimento: Google Colab, Jupyter Notebook
 
-## Como Rodar o Projeto
-Pré-requisitos
-Certifique-se de ter o Python 3.7+ instalado no seu ambiente. Você também precisará de um ambiente virtual (venv) para gerenciar as dependências.
+## Modelos: DecisionTreeClassifier, KNeighborsClassifier, GaussianNB, SVC
+
+## Ambiente de Desenvolvimento: Google Colab, Jupyter Notebook
 
 ## Como executar
-Será necessário ter todas as bibliotecas Python listadas no arquivo requirements.txt instaladas. Após clonar o repositório, vá ao diretório raiz pelo terminal para executar os comandos abaixo.
+Será necessário ter todas as libs python listadas no requirements.txt instaladas. Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal, para poder executar os comandos descritos abaixo.
 
-É fortemente indicado o uso de ambientes virtuais, como o virtualenv.
+É fortemente indicado o uso de ambientes virtuais do tipo virtualenv.
 
-Instale as dependências com o comando:
+(env)$ pip install -r requirements.txt
+Este comando instala as dependências/bibliotecas, descritas no arquivo requirements.txt.
 
-pip install -r requirements.txt
+Para executar a API basta executar:
 
-Este comando instala todas as bibliotecas descritas no arquivo requirements.txt.
+(env)$ flask run --host 0.0.0.0 --port 5000
+Em modo de desenvolvimento é recomendado executar utilizando o parâmetro reload, que reiniciará o servidor automaticamente após uma mudança no código fonte.
 
-Para rodar a API, utilize o comando:
+(env)$ flask run --host 0.0.0.0 --port 5000 --reload
+Abra o http://localhost:5000/#/ no navegador para verificar o status da API em execução.
 
-flask run --host 0.0.0.0 --port 5000
+Após iniciar o aplicativo, você pode acessar a documentação da API para explorar e testar os endpoints disponíveis. Documentação disponível em /openapi, escolha entre Swagger, Redoc ou RapiDoc.
 
-Em modo de desenvolvimento, recomenda-se rodar com o parâmetro --reload para que o servidor reinicie automaticamente a cada alteração no código.
-
-Acesse o endereço http://localhost:5000/#/ no navegador para verificar o status da API.
-
-## Documentação da API
-Após rodar a aplicação, você pode acessar a documentação da API para explorar e testar os endpoints disponíveis. A documentação estará disponível em /openapi com as opções Swagger, Redoc ou RapiDoc.
-
-## Executar o Front-end
-Para rodar o front-end, faça o download do projeto, rode a API e abra o arquivo index.html no seu navegador. Para uma experiência otimizada, recomenda-se usar um simulador de servidor como o Five Server.
+## Para executar a Front-End basta executar:
+Basta fazer o download do projeto rodar a API e abrir o index.html no seu browser com o simulador de Servidor (Aconselhavel o Five Server).
 
 ## Contribuições
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues, reportar bugs ou propor melhorias. A comunidade de desenvolvedores e colaboradores é essencial para o aprimoramento contínuo deste projeto.
-
+Contribuições são bem-vindas! Sinta-se à vontade para abrir questionamentos para reportar bugs ou propor melhorias.
