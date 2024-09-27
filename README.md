@@ -32,7 +32,7 @@ Será necessário ter todas as libs python listadas no requirements.txt instalad
 (env)$ pip install -r requirements.txt
 Este comando instala as dependências/bibliotecas, descritas no arquivo requirements.txt.
 
-Para executar a API basta executar: 📚
+## Para executar a API: 📚
 
 (env)$ flask run --host 0.0.0.0 --port 5000
 Em modo de desenvolvimento é recomendado executar utilizando o parâmetro reload, que reiniciará o servidor automaticamente após uma mudança no código fonte.
@@ -42,7 +42,7 @@ Abra o http://localhost:5000/#/ no navegador para verificar o status da API em e
 
 Após iniciar o aplicativo, você pode acessar a documentação da API para explorar e testar os endpoints disponíveis. Documentação disponível em /openapi, escolha entre Swagger, Redoc ou RapiDoc.
 
-## Para executar a Front-End 🌐
+## Para executar o Front-End 🌐
 Basta fazer o download do projeto rodar a API e abrir o index.html no seu browser com o simulador de Servidor (Aconselhavel o Five Server).
 
 ## Contribuições 🤝
