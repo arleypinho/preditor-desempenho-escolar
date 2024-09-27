@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Sistema de Predição de Alunos</title>
+    <link rel="icon" href="img/alunos.png" type="image/png">
+</head>
+
+<body>
+    <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="title">
+            <h2>Bem-Vindo ao Sistema de Predição de Alunos</h2>
+            <br>
+            <p>Este sistema foi desenvolvido para auxiliar educadores a identificar se um aluno 
+                tem chances de ser Aprovado ou Reprovado com base em várias características e comportamentos relacionados ao 
+                desempenho acadêmico. O objetivo principal é ajudar a identificar em qual categoria um 
+                aluno provavelmente se enquadra, usando informações demográficas, atividades extracurriculares e outros fatores
+                relacionados ao apoio acadêmico e social. <br>
+                •	1: Para alunos como possíveis "Aprovado". <br>
+                •	0: Para alunos como possíveis "Reprovado".
+            </p>
+            <p>Para isso, basta preencher os campos abaixo com os dados do aluno e clicar em "Prever" para 
+                ver o "Resultado".</p>
+        </div>
+        <div class="banner">
+            <img src="img/company.png" alt="Banner">
+        </div>
+    </header>
+
+    <!-- Opções para adicionar um novo item -->
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="Nome">
+        <input type="number" id="newAge" placeholder="Idade (15-18)" min="15" max="18">
+        
+        <select id="newGender">
+            <option value="">Selecione o Gênero</option>
+            <option value="0">Masculino</option>
+            <option value="1">Feminino</option>
+        </select>
+
+        <select id="newEthnicity">
+            <option value="">Selecione a Etnia</option>
+            <option value="0">Caucasian</option>
+            <option value="1">Afro-americano</option>
+            <option value="2">Asiático</option>
+            <option value="3">Outro</option>
+        </select>
+
+        <select id="newParentalEducation">
+            <option value="">Selecione a Educação dos Pais</option>
+            <option value="0">Nenhum</option>
+            <option value="1">Ensino Médio</option>
+            <option value="2">Alguma faculdade</option>
+            <option value="3">Bacharel</option>
+            <option value="4">Superior</option>
+        </select>
+
+        <input type="number" id="newStudyTimeWeekly" placeholder="Tempo de Estudo Semanal (0-20 horas)" min="0" max="20">
+        <input type="number" id="newAbsences" placeholder="Faltas (0-30)" min="0" max="30">
+
+        <select id="newTutoring">
+            <option value="">Status de Tutoria</option>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+        </select>
+
+        <select id="newParentalSupport">
+            <option value="">Selecione o Apoio dos Pais</option>
+            <option value="0">Nenhum</option>
+            <option value="1">Baixo</option>
+            <option value="2">Moderado</option>
+            <option value="3">Alto</option>
+            <option value="4">Muito alto</option>
+        </select>
+
+        <select id="newExtracurricular">
+            <option value="">Atividades Extracurriculares</option>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+        </select>
+
+        <select id="newSports">
+            <option value="">Participação em Esportes</option>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+        </select>
+
+        <select id="newMusic">
+            <option value="">Participação em Música</option>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+        </select>
+
+        <select id="newVolunteering">
+            <option value="">Participação em Voluntariado</option>
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+        </select>
+
+        <span onclick="newItem()" class="addBtn">Prever</span>
+    </section>
+
+    <!-- Tabela com itens existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Gênero</th>
+                <th>Etnia</th>
+                <th>Educação dos Pais</th>
+                <th>Tempo de Estudo Semanal</th>
+                <th>Faltas</th>
+                <th>Apoio Escolar</th>
+                <th>Apoio dos Pais</th>
+                <th>Atividades Extracurriculares</th>
+                <th>Esportes</th>
+                <th>Música</th>
+                <th>Voluntariado</th>
+                <th>Resultado</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15" height="15"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
