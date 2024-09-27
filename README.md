@@ -21,7 +21,8 @@ Bibliotecas: pandas, numpy, scikit-learn
 ## Modelos Testes: 
 DecisionTreeClassifier, KNeighborsClassifier, GaussianNB, SVC
 
-## Ambiente de Desenvolvimento: Google Colab, Jupyter Notebook
+## Ambiente de Desenvolvimento: 
+Google Colab, Jupyter Notebook, Visual Studio Code
 
 ## Como executar ⚙️
 Será necessário ter todas as libs python listadas no requirements.txt instaladas. Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal, para poder executar os comandos descritos abaixo.
