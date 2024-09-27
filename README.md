@@ -18,7 +18,8 @@ Front-end: HTML, CSS, JavaScript
 Machine Learning:
 Bibliotecas: pandas, numpy, scikit-learn
 
-## Modelos: DecisionTreeClassifier, KNeighborsClassifier, GaussianNB, SVC
+## Modelos Testes: 
+DecisionTreeClassifier, KNeighborsClassifier, GaussianNB, SVC
 
 ## Ambiente de Desenvolvimento: Google Colab, Jupyter Notebook
 
